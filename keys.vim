@@ -12,7 +12,8 @@ noremap <silent><F2> :Tagbar<CR>
 noremap <silent><F3> :UndotreeToggle<CR>
 
 " ------------------------- General Keymap -------------------------
-
+nnoremap [l ^
+nnoremap ]l $
 noremap <silent><leader>u :UndotreeToggle<CR>
 noremap bn :bn<CR>    "切换到下一个buffer
 noremap bv :bp<CR>    “切换到上一个buffer
@@ -234,6 +235,8 @@ noremap <leader>9 9gt
 noremap <leader>0 :tablast<CR>
 
 " ------------------------ Plugin Keymap ---------------------------
+
+map <leader><space> :FixWhitespace<cr>
 
 " vim-nerdtree-tabs
 noremap <silent> t :NERDTreeTabsToggle<CR>

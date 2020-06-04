@@ -1,3 +1,10 @@
+
+
+" wiki
+let g:vimwiki_list = [{'path': '~/vimwiki/',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
+
+
 " markdown
 " set to 1, nvim will open the preview window after entering the markdown buffer
 " default: 0
@@ -432,7 +439,7 @@ let g:tagbar_type_go = {
 
 " ultisnips
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-" let g:UltiSnipsExpandTrigger='<tab>'
+let g:UltiSnipsExpandTrigger='<tab>'
 " let g:UltiSnipsListSnippets = '<C-tab>'
 "let g:UltiSnipsJumpForwardTrigger='<C-n>'
 "let g:UltiSnipsJumpBackwardTrigger='<C-p>'
@@ -444,6 +451,21 @@ let g:interestingWordsTermColors = [
   \ '166', '123', '214', '34', '222', '116', '207', '242',
   \]
 let g:interestingWordsRandomiseColors = 0
+
+" vimtex
+let g:tex_flavor='latex'
+let g:vimtex_view_method='zathura'
+let g:vimtex_quickfix_mode=0
+" set conceallevel=1
+let g:tex_conceal='abdmg'
+" 对中文的支持
+let g:Tex_CompileRule_pdf = 'xelatex -synctex=1 --interaction=nonstopmode $*'
+let g:vimtex_compiler_latexmk_engines = {'_':'-xelatex'}
+let g:vimtex_compiler_latexrun_engines ={'_':'xelatex'}
+
+set conceallevel=2   "这里建议写成2，写1时替换后的效果不好看
+let g:tex_conceal='abdmg'
+
 
 " undotree
 if has("persistent_undo")

@@ -1,5 +1,6 @@
 "" Use :help 'option' to see the documentation for the given option.
 " 自动补全
+let g:VM_leader = ";"
 let g:deoplete#enable_at_startup = 1
 
 
@@ -7,6 +8,8 @@ set clipboard+=unnamed " 共享剪贴板
 
 " 默认的状态栏显示的内容。vim-airline 会覆盖这个配置，当禁用 airline 时此行生效。
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
+
+
 
 " Set the default listing style:
 " = 0: thin listing (one file per line)

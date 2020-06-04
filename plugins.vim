@@ -1,7 +1,10 @@
 "" Other
+Plug 'vimwiki/vimwiki'   " wiki
 Plug 'wvffle/vimterm' "terminal
 Plug 'neomutt/neomutt.vim'
+Plug 'KeitaNakamura/tex-conceal.vim', {'for': 'tex'}  "latex
 Plug 'lervag/vimtex'        "latex
+Plug 'wjakob/wjakob.vim'   "latex
 Plug 'liuchengxu/space-vim-theme'   "主题
 Plug 'mhinz/vim-startify'   "开始界面
 "" Funny
@@ -52,7 +55,7 @@ Plug 'simeji/winresizer'
 """ Brackets and Tags Matching
 Plug 'luochen1990/rainbow'  " 括号颜色配对。Attention: 可能会影响到其他语法着色
 Plug 'tpope/vim-surround' " mappings to easily delete, change and add such surroundings in pairs, such as quotes, parens, etc.
-Plug 'Raimondi/delimitMate' " automatic closing of quotes, parenthesis, brackets, etc.
+" Plug 'Raimondi/delimitMate' " automatic closing of quotes, parenthesis, brackets, etc.
 Plug 'adoyle-h/vim-eunuch', {'branch': 'adoyle'}  " UNIX 命令封装。 :h eunuch
 Plug 'tpope/vim-ragtag' " like closetag. endings for html, xml, etc. - enhance vim-surround
 Plug 'alvan/vim-closetag'
@@ -104,6 +107,7 @@ Plug 'w0rp/ale' " Asynchronous Syntax Lint Engine
 "" Formatting
 Plug 'sbdchd/neoformat'
 Plug 'Chiel92/vim-autoformat'  " 整理格式。并且自带的 RemoveTrailingSpaces 也可以去空格
+Plug 'bronson/vim-trailing-whitespace'    " 快速去行尾空格 [, + <Space>]
 Plug 'editorconfig/editorconfig-vim' " .editorconfig support
 Plug 'rhlobo/vim-super-retab', {'on': ['Space2Tab', 'Tab2Space']}
 Plug 'vim-scripts/ShowTrailingWhitespace'  " 高亮尾空格
