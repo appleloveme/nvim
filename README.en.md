@@ -1,49 +1,47 @@
 # ADoyle-Style Neovim Configuration
 
-学习交流用，仅供参考。
-
-Click [./README.en.md](./README.en.md) to read English documents.
+Share for learning and reference.
 
 ## TOC
 
 <!-- MarkdownTOC GFM -->
 
-- [版本](#版本)
-- [依赖](#依赖)
-- [安装](#安装)
-- [目录结构](#目录结构)
-- [建议，Bug，做贡献](#建议bug做贡献)
-- [版权声明](#版权声明)
+- [Version](#version)
+- [Dependency](#dependency)
+- [Installation](#installation)
+- [Files Structure](#files-structure)
+- [Suggestion, Bug Reporting, Contributing](#suggestion-bug-reporting-contributing)
+- [Copyright and License](#copyright-and-license)
 
 <!-- /MarkdownTOC -->
 
-## 版本
+## Version
 
-NVIM v0.3 及以上版本。
+NVIM v0.3 and higher.
 
-## 依赖
+## Dependency
 
-- Vim 插件管理器: https://github.com/junegunn/vim-plug
-- 100+ Vim 插件
+- Vim Plugin Manager: https://github.com/junegunn/vim-plug
+- 100+ Vim plugins
 - python3、pip3、python2、pip2
 - nvim python provider
   - `pip2 install --upgrade --user pynvim`
   - `pip3 install --upgrade --user pynvim`
-- [Nerd Font 字体][Nerd Font]。推荐 [DejaVuSansMonoForPowerline Nerd Font][font]。然后修改你的终端的字体设置。
+- [Nerd Font][]. Recommend [DejaVuSansMonoForPowerline Nerd Font][font]. And change your terminal font setting.
 
-## 安装
+## Installation
 
 ```sh
-# 设置你的 nvim 配置目录
+# Set your nvim config directory
 NVIM_HOME=${XDG_CONFIG_HOME:-$HOME/.config}/nvim
 git clone --depth 1 https://github.com/adoyle-h/neovim-config.git "$NVIM_HOME"
 
-# 执行 `nvim` 开始。
-# 初次执行 `nvim` 会自动安装插件管理器和插件，会非常慢，请耐心等待。
+# Invoke `nvim` to get started.
+# It is slow started at first time because it installs plugin manager and plugins automatically. Please be patient.
 nvim
 ```
 
-## 目录结构
+## Files Structure
 
 ```
 .
@@ -72,11 +70,11 @@ nvim
     └── undodir        // mbbill/undotree plugin
 ```
 
-## 建议，Bug，做贡献
+## Suggestion, Bug Reporting, Contributing
 
 Any comments and suggestions are always welcome. Please open an [issue][] to contact with me.
 
-## 版权声明
+## Copyright and License
 
 Copyright (c) 2016-2020 ADoyle. The project is licensed under the **BSD 3-clause License**.
 
