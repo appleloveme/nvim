@@ -1,4 +1,4 @@
-# ADoyle-Style Neovim Configuration
+# ALM-Style Neovim Configuration
 
 学习交流用，仅供参考。
 
@@ -12,8 +12,6 @@ Click [./README.en.md](./README.en.md) to read English documents.
 - [依赖](#依赖)
 - [安装](#安装)
 - [目录结构](#目录结构)
-- [建议，Bug，做贡献](#建议bug做贡献)
-- [版权声明](#版权声明)
 
 <!-- /MarkdownTOC -->
 
@@ -72,20 +70,8 @@ nvim
     └── undodir        // mbbill/undotree plugin
 ```
 
-## 建议，Bug，做贡献
-
-Any comments and suggestions are always welcome. Please open an [issue][] to contact with me.
-
-## 版权声明
-
-Copyright (c) 2016-2020 ADoyle. The project is licensed under the **BSD 3-clause License**.
-
-See the [LICENSE][] file for the specific language governing permissions and limitations under the License.
-
 
 <!-- links -->
 
-[issue]: https://github.com/adoyle-h/neovim-config/issues
-[LICENSE]: ./LICENSE
 [font]: https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/DejaVuSansMono
 [Nerd Font]: https://github.com/ryanoasis/nerd-fonts

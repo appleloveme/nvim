@@ -1,4 +1,4 @@
-# ADoyle-Style Neovim Configuration
+# ALM-Style Neovim Configuration
 
 Share for learning and reference.
 
@@ -10,8 +10,6 @@ Share for learning and reference.
 - [Dependency](#dependency)
 - [Installation](#installation)
 - [Files Structure](#files-structure)
-- [Suggestion, Bug Reporting, Contributing](#suggestion-bug-reporting-contributing)
-- [Copyright and License](#copyright-and-license)
 
 <!-- /MarkdownTOC -->
 
@@ -70,20 +68,7 @@ nvim
     └── undodir        // mbbill/undotree plugin
 ```
 
-## Suggestion, Bug Reporting, Contributing
-
-Any comments and suggestions are always welcome. Please open an [issue][] to contact with me.
-
-## Copyright and License
-
-Copyright (c) 2016-2020 ADoyle. The project is licensed under the **BSD 3-clause License**.
-
-See the [LICENSE][] file for the specific language governing permissions and limitations under the License.
-
-
 <!-- links -->
 
-[issue]: https://github.com/adoyle-h/neovim-config/issues
-[LICENSE]: ./LICENSE
 [font]: https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/DejaVuSansMono
 [Nerd Font]: https://github.com/ryanoasis/nerd-fonts
