@@ -1,6 +1,7 @@
-"" Other
+g" Other
+Plug 'voldikss/vim-floaterm'
 Plug 'vimwiki/vimwiki'   " wiki
-Plug 'wvffle/vimterm' "terminal
+" Plug 'wvffle/vimterm' "terminal
 Plug 'neomutt/neomutt.vim'
 Plug 'KeitaNakamura/tex-conceal.vim', {'for': 'tex'}  "latex
 Plug 'lervag/vimtex'        "latex

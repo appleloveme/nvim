@@ -1,3 +1,6 @@
+" Set floaterm window background to skyblue once the cursor moves out from it
+hi FloatermNC guibg=skyblue
+
 "" Use :help 'option' to see the documentation for the given option.
 " 自动补全
 let g:VM_leader = "\\"

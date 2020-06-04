@@ -1,4 +1,8 @@
-
+let g:floaterm_keymap_new = '<Leader>fn'
+let g:floaterm_gitcommit = 'split'
+let g:floaterm_keymap_hide = '<leader>fh'
+let g:floaterm_keymap_show = '<leader>fs'
+let g:floaterm_keymap_kill = '<leader>fk'
 
 " wiki
 let g:vimwiki_list = [{'path': '~/vimwiki/',

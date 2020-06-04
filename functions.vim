@@ -83,6 +83,82 @@ function! GetSnipsInCurrentScope()
 endfunction
 
 
+
+
+" noremap  <silent> <expr><F12>  &buftype =='terminal' ?
+                               " \ "\<C-\><C-n>:call ToggleTerminal(g:terminal_height)\<CR>" :
+                               " \ (has('nvim') ?
+                               " \ "\<Esc>:call ToggleTerminal(g:terminal_height)\<CR>i" :
+                               " \ "\<Esc>:call ToggleTerminal(g:terminal_height)\<CR>")
+
+" noremap! <silent> <F12>        <Esc>:call ToggleTerminal(g:terminal_height)<CR>i
+" tnoremap <silent> <F12>        <C-\><C-n>:call ToggleTerminal(g:terminal_height)<CR>
+
+
+
+
+" function! ToggleTerminal(height)
+  " let found_winnr = 0
+  " for winnr in range(1, winnr('$'))
+    " if getbufvar(winbufnr(winnr), '&buftype') == 'terminal'
+      " let found_winnr = winnr
+    " endif
+  " endfor
+
+  " if found_winnr > 0
+    " if &buftype == 'terminal'
+        " " if current window is the terminal window, close it
+        " execute found_winnr . 'wincmd q'
+    " else
+        " " if current window is not terminal, go to the terminal window
+        " execute found_winnr . 'wincmd w'
+    " endif
+  " else
+    " let found_quickfix = 0
+    " let found_bufnr = 0
+    " for bufnr in filter(range(1, bufnr('$')), 'bufexists(v:val)')
+      " let buftype = getbufvar(bufnr, '&buftype')
+      " if buftype == 'terminal'
+        " let found_bufnr = bufnr
+      " elseif buftype == 'quickfix'
+        " let found_quickfix = bufnr
+      " endif
+    " endfor
+    " " if quickfix was open, close it firstly
+    " if found_quickfix > 0
+        " execute 'cclose'
+    " endif
+    " if found_bufnr > 0
+      " if &lines > 30
+        " execute 'botright ' . a:height . 'split'
+        " execute 'buffer ' . found_bufnr
+      " else
+        " botright split
+        " execute 'buffer ' . found_bufnr
+      " endif
+    " else
+      " if &lines > 30
+        " if has('nvim')
+          " execute 'botright ' . a:height . 'split term://' . &shell
+        " else
+          " botright terminal
+          " resize a:height
+        " endif
+      " else
+        " if has('nvim')
+          " execute 'botright split term://' . &shell
+        " else
+          " botright terminal
+        " endif
+      " endif
+    " endif
+  " endif
+" endfunction
+
+
+
+
+
 " A third example on how to use this function to extract all snippets of
 " current buffer: >
 
