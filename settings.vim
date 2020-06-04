@@ -1,6 +1,6 @@
 "" Use :help 'option' to see the documentation for the given option.
 " 自动补全
-let g:VM_leader = ";"
+let g:VM_leader = "\\"
 let g:deoplete#enable_at_startup = 1
 
 
