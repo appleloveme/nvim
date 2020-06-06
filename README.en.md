@@ -1,3 +1,4 @@
+
 # ALM-Style Neovim Configuration
 
 Share for learning and reference.
@@ -70,5 +71,7 @@ nvim
 
 <!-- links -->
 
+[issue]: https://github.com/adoyle-h/neovim-config/issues
+[LICENSE]: ./LICENSE
 [font]: https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/DejaVuSansMono
 [Nerd Font]: https://github.com/ryanoasis/nerd-fonts

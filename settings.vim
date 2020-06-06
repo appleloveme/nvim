@@ -149,8 +149,8 @@ set noerrorbells
 set visualbell
 
 " set ignore file extension of wildmenu, won't list when using filename completion
-set wildignore+=*.a,*.o,.DS_Store,.git,.hg,.svn,*~,*.swp,*.tmp,*/.sass-cache/*,*.scssc
-set wildmode=list,full " Command <Tab> completion, list matches, then longest common part, then all.
+" set wildignore+=*.a,*.o,.DS_Store,.git,.hg,.svn,*~,*.swp,*.tmp,*/.sass-cache/*,*.scssc
+" set wildmode=list,full " Command <Tab> completion, list matches, then longest common part, then all.
 
 "set cc=80,100  " highlight three columns after 'textwidth'
 set synmaxcol=300 " Syntax coloring lines that are too long just slows down the world

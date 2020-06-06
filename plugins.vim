@@ -1,17 +1,12 @@
-g" Other
+" Other
 Plug 'voldikss/vim-floaterm'
 Plug 'vimwiki/vimwiki'   " wiki
-" Plug 'wvffle/vimterm' "terminal
 Plug 'neomutt/neomutt.vim'
 Plug 'KeitaNakamura/tex-conceal.vim', {'for': 'tex'}  "latex
 Plug 'lervag/vimtex'        "latex
-Plug 'wjakob/wjakob.vim'   "latex
+" Plug 'wjakob/wjakob.vim'   "latex
 Plug 'liuchengxu/space-vim-theme'   "主题
 Plug 'mhinz/vim-startify'   "开始界面
-"" Funny
-"Plug 'johngrib/vim-game-snake', {'on': 'VimGameSnake'}
-"Plug 'koron/nyancat-vim', {'on': ['Nyancat', 'Nyancat2']}
-"Plug 'uguu-org/vim-matrix-screensaver', {'on': 'Matrix'}
 
 """ Nerdtree
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeMirrorToggle', 'NERDTreeTabsToggle', 'NERDTreeTabsFind', 'NERDTreeToggle', 'NERDTreeFind'] }
@@ -56,7 +51,7 @@ Plug 'simeji/winresizer'
 """ Brackets and Tags Matching
 Plug 'luochen1990/rainbow'  " 括号颜色配对。Attention: 可能会影响到其他语法着色
 Plug 'tpope/vim-surround' " mappings to easily delete, change and add such surroundings in pairs, such as quotes, parens, etc.
-" Plug 'Raimondi/delimitMate' " automatic closing of quotes, parenthesis, brackets, etc.
+Plug 'Raimondi/delimitMate' " automatic closing of quotes, parenthesis, brackets, etc.
 Plug 'adoyle-h/vim-eunuch', {'branch': 'adoyle'}  " UNIX 命令封装。 :h eunuch
 Plug 'tpope/vim-ragtag' " like closetag. endings for html, xml, etc. - enhance vim-surround
 Plug 'alvan/vim-closetag'
@@ -93,8 +88,8 @@ Plug 'chrisbra/Recover.vim'   " 崩溃后打开 swap 文件 diff
 " The <Tab> key is conflicted to coc.nvim. If you do not use coc, uncomment next line.
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets' " vim-snippets depends on ultisnips
-Plug 'justinj/vim-react-snippets'
-Plug 'ahmedelgabri/vim-ava-snippets'
+" Plug 'justinj/vim-react-snippets'
+" Plug 'ahmedelgabri/vim-ava-snippets'
 " Plug 'mattn/webapi-vim' | Plug 'mattn/gist-vim'
 
 "" Auto Completion
@@ -125,6 +120,7 @@ Plug 'sotte/presenting.vim', { 'for': 'markdown' } " markdown 幻灯片
 
 "" Languages
 """ Markdown
+Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown', {'for': ['markdown']}
 Plug 'lvht/tagbar-markdown', {'for': ['markdown']} " List TOC
 Plug 'adoyle-h/vim-MarkdownTOC', {'for': 'markdown', 'branch': 'adoyle'} " Table of Content generator

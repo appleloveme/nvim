@@ -4,17 +4,16 @@
 
 " set a map <leader> for more key combos
 let mapleader = ';'
-
+inoremap <tab> <tab>
 " ------------------------ F1~F9 Keymap ----------------------------
 " Prevent <F1> key from opening system help window. You can use ":help" to open vim help window
 noremap <F1> <Esc>
 noremap <silent><F2> :Tagbar<CR>
 noremap <silent><F3> :UndotreeToggle<CR>
-
 " ------------------------- General Keymap -------------------------
 nnoremap [l ^
 nnoremap ]l $
-noremap <silent><leader>u :UndotreeToggle<CR>
+noremap <silent><leader>ut :UndotreeToggle<CR>
 noremap bn :bn<CR>    "切换到下一个buffer
 noremap bv :bp<CR>    “切换到上一个buffer
 nnoremap h i<RIGHT>
@@ -23,10 +22,6 @@ nnoremap Q :q!<CR>
 noremap q :wq<CR>y
 nnoremap s :w<CR>
 
-" terminal
-nnoremap <silent><leader>tr :call vimterm#run('!time python3')
-nnoremap <silent><leader>tc :call vimterm#exec('/tmp/out')
-nnoremap <silent><leader>tn :call vimterm#toggle() <CR>
 
 " record
 noremap <leader>rs qq
@@ -272,11 +267,11 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-inoremap <silent><expr> <TAB>
-  \ pumvisible() ? coc#_select_confirm() :
-  \   coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
-  \   <SID>check_back_space() ? "\<TAB>" :
-  \   coc#refresh()
+" inoremap <silent><expr> <TAB>
+  " \ pumvisible() ? coc#_select_confirm() :
+  " \   coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
+  " \   <SID>check_back_space() ? "\<TAB>" :
+  " \   coc#refresh()
 
 "" coc-snippets
 " Use <C-l> for trigger snippet expand.

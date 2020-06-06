@@ -17,11 +17,12 @@ source $NVIM_HOME/autocmds.vim
 call plug#begin('$NVIM_HOME/plugged')
 source $NVIM_HOME/plugins.vim
 call plug#end()
+source $NVIM_HOME/keys.vim
 source $NVIM_HOME/plugins-config.vim
 
 source $NVIM_HOME/settings.vim
 source $NVIM_HOME/highlights.vim
-source $NVIM_HOME/keys.vim
+" source $NVIM_HOME/keys.vim
 
 for file in split(glob('$NVIM_HOME/ftdetect/*.vim'), '\n')
   execute 'source' file

@@ -1,3 +1,4 @@
+
 let g:floaterm_keymap_new = '<Leader>fn'
 let g:floaterm_gitcommit = 'split'
 let g:floaterm_keymap_hide = '<leader>fh'
@@ -443,11 +444,12 @@ let g:tagbar_type_go = {
 
 " ultisnips
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger='<tab>'
+let g:UltiSnipsExpandTrigger="<tab>"
 " let g:UltiSnipsListSnippets = '<C-tab>'
 "let g:UltiSnipsJumpForwardTrigger='<C-n>'
 "let g:UltiSnipsJumpBackwardTrigger='<C-p>'
-let g:UltiSnipsSnippetsDir = $NVIM_HOME.'/UltiSnips'
+let g:UltiSnipsSnippetsDir = ['~/.config/nvim/UltiSnips', 'UltiSnips']
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
 
 " vim-interestingwords
 let g:interestingWordsTermColors = [
