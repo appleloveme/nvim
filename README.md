@@ -2,8 +2,6 @@
 
 学习交流用，仅供参考。
 
-Click [./README.en.md](./README.en.md) to read English documents.
-
 ## TOC
 
 <!-- MarkdownTOC GFM -->
@@ -32,9 +30,7 @@ NVIM v0.3 及以上版本。
 ## 安装
 
 ```sh
-# 设置你的 nvim 配置目录
-NVIM_HOME=${XDG_CONFIG_HOME:-$HOME/.config}/nvim
-git clone --depth 1 https://github.com/adoyle-h/neovim-config.git "$NVIM_HOME"
+git clone https://github.com/appleloveme/nvim ~/.config/nvim
 
 # 执行 `nvim` 开始。
 # 初次执行 `nvim` 会自动安装插件管理器和插件，会非常慢，请耐心等待。

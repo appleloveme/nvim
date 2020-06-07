@@ -10,7 +10,7 @@ autocmd Filetype markdown inoremap <buffer> ,f <Esc>/<++><CR>:nohlsearch<CR>"_c4
 autocmd Filetype markdown inoremap <buffer> ,w <Esc>/ <++><CR>:nohlsearch<CR>"_c5l<CR>
 autocmd Filetype markdown inoremap <buffer> ,n ---<Enter><Enter>
 autocmd Filetype markdown inoremap <buffer> ,b **** <++><Esc>F*hi
-autocmd Filetype markdown inoremap <buffer> ,s ~~~~ <++><Esc>F~hi
+autocmd Filetype markdown inoremap <buffer> ,u ~~~~ <++><Esc>F~hi
 autocmd Filetype markdown inoremap <buffer> ,i ** <++><Esc>F*i
 autocmd Filetype markdown inoremap <buffer> ,d `` <++><Esc>F`i
 autocmd Filetype markdown inoremap <buffer> ,c ```<Enter><++><Enter>```<Enter><Enter><++><Esc>4kA
@@ -24,9 +24,12 @@ autocmd Filetype markdown inoremap <buffer> ,4 ####<Space><Enter><++><Esc>kA
 autocmd Filetype markdown inoremap <buffer> ,l --------<Enter>
 autocmd Filetype markdown inoremap <buffer> ,h ---<Enter><Space>layout:post<Enter>title:"<++>"<Enter>subtitle:"<++>"<Enter>date:"<++>"<Enter>author:"alm"<Enter>header-img:"<++>"<Enter>catalog:true<Enter>tags:<Enter><Space>-"<++>"<Enter><BackSpace>---
 
-autocmd Filetype markdown inoremap <buffer> ,p <div<Space>align="center"><Enter><img<Space>src="<++>"<Space>width="600"<Space>height="400"<Space>alt="<++>"/><Enter></div><Enter><++>
+autocmd Filetype markdown inoremap <buffer> ,p <div<Space>align="center"><Enter><img<Space>src="<++>"<Space>width="100%"<Space>height="100%"<Space>alt="<++>"/><Enter></div><Enter><++>
 
 
-autocmd Filetype markdown inoremap <buffer> ,v <div<Space>align="center"><Enter><++><Enter><div><Enter><++>
+autocmd Filetype markdown inoremap <buffer> ,v <div<Space>align="center"><Enter><++><Enter></div><Enter><++>
 
 
+autocmd Filetype markdown inoremap <buffer> ,s  <span<Space>style='color:<++>'><++></span>
+
+autocmd Filetype markdown inoremap <buffer> ,sv  width="100%"
